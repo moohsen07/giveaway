@@ -36,3 +36,52 @@ let tick = () => {
 
 }
 setInterval(tick, 1000)
+
+// dark mode
+
+let darkSwitch = document.querySelector(".dark-switch")
+
+let darkMode = localStorage.getItem("darkMode")
+
+const enableDarkMode = () => {
+
+  darkSwitch.style.color = "#d8ad2c"
+
+  document.body.classList.add("dark")
+
+  document.body.style.backgroundColor = "#000"
+
+  document.querySelector(".buttons .send").style.cssText = "background-color: transparent ;color: var(--seceond-color);"
+
+  document.querySelector(".buttons .fb-btn").style.cssText = "background-color: transparent ;color: #4C6EF5;"
+
+  localStorage.setItem("darkMode", "enable")
+
+}
+const disableDarkMode = () => {
+
+  darkSwitch.style.color = "inherit"
+
+  document.body.classList.remove("dark")
+
+  document.body.style.backgroundColor = "#fff"
+
+  localStorage.setItem("darkMode", null)
+
+}
+
+if (darkMode == "enable") {
+
+  enableDarkMode()
+
+}
+
+darkSwitch.addEventListener("click", () => {
+
+  let darkMode = localStorage.getItem("darkMode")
+
+  if (darkMode !== "enable") enableDarkMode()
+
+  else disableDarkMode()
+
+})

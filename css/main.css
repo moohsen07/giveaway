@@ -1,17 +1,30 @@
+
 :root{
+  --background-color:#fff;
   --main-color: #222f3e;
   --seceond-color: #e66767 ;
+}
+.dark{
+  --background-color: #202020;
+  --main-color: #ccc;
 }
 body{
   font-family: 'Josefin Sans', sans-serif !important;
   color: var(--main-color) !important;
+  transition: .8s ease-in-out;
 }
-
+.dark-switch{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
 .giveaway{
   width: 600px;
   overflow: hidden;
   border-radius: 15px;
-  background-color: #fff;
+  background-color: var(--background-color);
 }
 .slider .carousel{
   height: 300px;
@@ -19,7 +32,7 @@ body{
 }
 @media(max-width : 500px){
   .slider .carousel{
-    height: auto;
+    height: 200px;
   }
 }
 .slider .carousel-indicators{
@@ -47,7 +60,7 @@ body{
 }
 .content{
   transform: translateY(-50px);
-  background-color: #fff;
+  background-color: var(--background-color);
   border-radius: 15px;
   width: 90%;
   margin: auto;
@@ -127,6 +140,12 @@ body{
   border-radius: 5px;
   font-size: 12px;
 }
+input.form-control{
+  background-color: var(--background-color);
+}
+input.form-control:focus{
+  background-color: var(--background-color);
+}
 .form-check-label {
   margin-bottom: 0;
   font-size: 13px;
@@ -142,7 +161,7 @@ body{
 }
 .second-part .buttons button.send:hover{
   color: var(--seceond-color);
-  background: #fff;
+  background: var(--background-color);
 }
 .second-part .buttons button.fb-btn{
   background-color: #4C6EF5;
@@ -158,7 +177,7 @@ body{
 }
 .second-part .buttons button.fb-btn:hover{
   color: #4C6EF5;
-  background: #fff;
+  background: var(--background-color);
 }
 @media(max-width : 500px){
 .second-part .buttons button.send ,
@@ -170,27 +189,26 @@ body{
 .social i{
   width: 40px;
   height: 40px;
-  margin-right: 15px;
+  margin: 15px;
   color: #fff;
   font-size: 20px;
   line-height: 40px;
   border-radius: 50%;
   cursor: pointer;
-  border: 1px solid;
   transition: .3s ease-in-out;
 }
 .social i.facebook{
   background-color: #4C6EF5;
 }
 .social i.facebook:hover{
-  background-color: #fff;
+  background-color: transparent;
   color: #4C6EF5;
 }
 .social i.twitter{
   background-color: #1da1f2;
 }
 .social i.twitter:hover{
-  background-color: #fff;
+  background-color: transparent;
   color: #1da1f2;
 }
 .social i.insta{
@@ -200,6 +218,6 @@ body{
   background-color: #db4437;
 }
 .social i.google:hover{
-  background-color: #fff;
+  background-color: transparent;
   color: #db4437;
 }
