@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/v4-shims.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Giveaway</title>
+</head>
+
+<body>
+
+  <div class="container d-flex justify-content-center">
+    <div class="giveaway shadow-lg my-4">
+      <div class="slider">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item position-relative active">
+              <img src="media/game.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item position-relative">
+              <img src="media/game2.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content text-center">
+        <h1 class="heading">Giveaway Title</h1>
+        <span class="time-left">Time Left Is :</span>
+        <div class="count-down d-flex justify-content-center position-relative my-4">
+          <div class="date d-flex flex-column">
+            <span class="date-num day"></span>
+            <span class="date-text">DAYS</span>
+          </div>
+          <div class="dot">:</div>
+          <div class="date d-flex flex-column">
+            <span class=" date-num hour"></span>
+            <span class="date-text">HOURS</span>
+          </div>
+          <div class="dot">:</div>
+          <div class="date d-flex flex-column">
+            <span class=" date-num min"></span>
+            <span class="date-text">MINUTES</span>
+          </div>
+          <div class="dot">:</div>
+          <div class="date d-flex flex-column">
+            <span class=" date-num sec"></span>
+            <span class="date-text">SECONDES</span>
+          </div>
+        </div>
+        <hr>
+        <div class="thumbnails row text-center my-5">
+          <div class="col-6 col-sm-4 thumbnail d-flex justify-content-center">
+            <i class="fas fa-money-bill-alt align-self-center mr-2"></i>
+            <span class="price">50$<span class="d-block">PRICE</span></span>
+          </div>
+          <div class="col-6 col-sm-4 text-center align-self-center">
+            <span class="entry-count font-weight-bold">Entry
+              Count
+              <span>05</span>
+            </span>
+          </div>
+          <div class="col-12 col-sm-4 thumbnail justify-content-center d-flex">
+            <i class="fas fa-trophy align-self-center mr-2"></i>
+            <span class="price .trophy">03<span class="d-block">Winner</span></span>
+          </div>
+        </div>
+        <div class="second-part text-left">
+          <h2 class="heading mb-3">Submit your entry</h2>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label text-muted" for="exampleCheck1">I consent to getting sale, promotion, or
+                marketing
+                email*</label>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label text-muted" for="exampleCheck1">I want to hear about more free
+                giveaways!</label>
+            </div>
+            <div class="buttons d-flex justify-content-center flex-wrap my-4">
+              <button type="submit" class="btn send">Send</button>
+              <span class="mx-3 align-self-center">OR</span>
+              <button type="submit" class="btn fb-btn"><i class="fab fa-facebook mr-2"></i>Continue as Ahmed</button>
+            </div>
+          </form>
+          <div class="earn-more text-center">
+            <h5 class="heading">Earn more entires, Just sharing on</h5>
+            <div class="social">
+              <i class="fab fa-facebook-f facebook"></i>
+              <i class="fab fa-twitter twitter"></i>
+              <i class="fab fa-instagram insta"></i>
+              <i class="fab fa-google-plus-g google"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+:root{
+  --main-color: #222f3e;
+  --seceond-color: #e66767 ;
+}
+body{
+  font-family: 'Josefin Sans', sans-serif !important;
+  color: var(--main-color) !important;
+}
+
+.giveaway{
+  width: 600px;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: #fff;
+}
+.slider .carousel{
+  height: 300px;
+  overflow: hidden;
+}
+@media(max-width : 500px){
+  .slider .carousel{
+    height: auto;
+  }
+}
+.slider .carousel-indicators{
+  bottom: 50px ;
+}
+.slider .carousel-indicators li{
+  background-clip: border-box;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--seceond-color);
+  background-color: transparent;
+}
+.slider .carousel-indicators li.active{
+  background-color: var(--seceond-color)
+}
+.slider .carousel .carousel-item::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+.content{
+  transform: translateY(-50px);
+  background-color: #fff;
+  border-radius: 15px;
+  width: 90%;
+  margin: auto;
+  padding: 15px;  
+}
+.content .heading{
+  font-weight: bold;
+}
+.content .time-left{
+  display: inline-block;
+  margin-top: 25px;
+  font-size: 17px;
+  position: relative;
+}
+.content .time-left::before{
+  content: '';
+  position: absolute;
+  left: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 90px;
+  height: 2px;
+  background-color: var(--seceond-color);
+}
+.content .time-left::after{
+  content: '';
+  position: absolute;
+  right: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 90px;
+  height: 2px;
+  background-color: var(--seceond-color);
+}
+.count-down .date-num{
+  font-size: 40px;
+  font-weight: bold;
+}
+.count-down .date-text{
+  font-size: 10px;
+  background-color: var(--seceond-color);
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.dot{
+  font-size: 40px;
+  margin:0 20px;
+}
+@media(max-width : 500px){
+  .dot{
+    margin: 0 10px;
+  }
+}
+.thumbnails .thumbnail i,
+.thumbnails .thumbnail .price,
+.thumbnails .thumbnail .trophy{
+  font-size: 25px;
+  font-weight: bold;
+}
+.thumbnails .thumbnail i{
+  color: var(--seceond-color);
+}
+.thumbnails .thumbnail .price span,
+.thumbnails .thumbnail .trophy span{
+  font-size: 12px;
+  margin-top: -4px;
+  font-weight: lighter;
+}
+.content .thumbnails .entry-count span{
+  display: inline-block;
+  margin-left: 5px;
+  padding: 2px 5px;
+  background-color: var(--seceond-color);
+  color:#fff;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.form-check-label {
+  margin-bottom: 0;
+  font-size: 13px;
+}
+.second-part .buttons button.send{
+  background: var(--seceond-color);
+  color: #fff;
+  padding: 5px 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: .4s ease-in-out;
+  border: 1px solid Var(--seceond-color);
+}
+.second-part .buttons button.send:hover{
+  color: var(--seceond-color);
+  background: #fff;
+}
+.second-part .buttons button.fb-btn{
+  background-color: #4C6EF5;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: bold;
+  transition: .3s ease-in-out;
+  border: 1px solid #4C6EF5;
+}
+.second-part .buttons button.fb-btn i{
+  font-size: 20px;
+  font-weight: lighter;
+}
+.second-part .buttons button.fb-btn:hover{
+  color: #4C6EF5;
+  background: #fff;
+}
+@media(max-width : 500px){
+.second-part .buttons button.send ,
+.second-part .buttons button.fb-btn{
+  flex: 100%;
+  margin: 10px 0;
+}
+}
+.social i{
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid;
+  transition: .3s ease-in-out;
+}
+.social i.facebook{
+  background-color: #4C6EF5;
+}
+.social i.facebook:hover{
+  background-color: #fff;
+  color: #4C6EF5;
+}
+.social i.twitter{
+  background-color: #1da1f2;
+}
+.social i.twitter:hover{
+  background-color: #fff;
+  color: #1da1f2;
+}
+.social i.insta{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);;
+}
+.social i.google{
+  background-color: #db4437;
+}
+.social i.google:hover{
+  background-color: #fff;
+  color: #db4437;
+}
