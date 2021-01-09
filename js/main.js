@@ -1,4 +1,4 @@
-let launchDate = new Date("September 17, 2020 00:00:00").getTime()
+let launchDate = new Date("September 17, 2025 00:00:00").getTime()
 
 let tick = () => {
 
